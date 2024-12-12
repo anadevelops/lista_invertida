@@ -8,13 +8,13 @@ class dirContinuo:
 
     def insere(self, chaveSec, chavePrinc):
         if chaveSec in self.__ref:
-            ref[chaveSec].append(chavePrinc)
+            self.__ref[chaveSec].append(chavePrinc)
         else:
-            ref[chaveSec] = chavePrinc
+            self.__ref[chaveSec] = chavePrinc
 
     def busca(self, chaveSec):
-        if chaveSec in sef.__ref:
-            return ref[chaveSec]
+        if chaveSec in self.__ref:
+            return self.__ref[chaveSec]
         else:
             return 'Não existe essa chave'
 
